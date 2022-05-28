@@ -3,7 +3,7 @@ const container = document.getElementById("container");
 const createNode = (el) => document.createElement(el);
 const append = (parent, el) => parent.appendChild(el);
 
-let id = 80;
+let id = 25;
 
 const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
