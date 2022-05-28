@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(48, 72, 195);
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: #efefbb;
+  background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  border: 1px solid gainsboro;
+  padding: 40px;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 20px;
+
+  -webkit-box-shadow: -11px 10px 14px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -11px 10px 14px -3px rgba(0, 0, 0, 1);
+  box-shadow: -11px 10px 14px -3px rgba(0, 0, 0, 1);
+  width: 400px;
+  height: auto;
+  cursor: pointer;
+}
+
+#container:hover {
+  animation: bounce 0.5s linear;
+}
+
+#container .pokemon {
+  width: 130px;
+  margin-block: 20px;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
